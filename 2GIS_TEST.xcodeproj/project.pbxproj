@@ -8,17 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		E8EE45F12A1359950066A1CF /* _GIS_TESTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE45F02A1359950066A1CF /* _GIS_TESTApp.swift */; };
-		E8EE45F32A1359950066A1CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE45F22A1359950066A1CF /* ContentView.swift */; };
+		E8EE45F32A1359950066A1CF /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE45F22A1359950066A1CF /* CategoriesView.swift */; };
 		E8EE45F52A1359970066A1CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8EE45F42A1359970066A1CF /* Assets.xcassets */; };
 		E8EE45F82A1359970066A1CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8EE45F72A1359970066A1CF /* Preview Assets.xcassets */; };
+		E8EE46002A1360850066A1CF /* CategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE45FF2A1360850066A1CF /* CategoryResponse.swift */; };
+		E8EE46042A1361D60066A1CF /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE46032A1361D60066A1CF /* CategoriesViewModel.swift */; };
+		E8EE460D2A1364610066A1CF /* DecoderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE460A2A1364610066A1CF /* DecoderService.swift */; };
+		E8EE460E2A1364610066A1CF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE460B2A1364610066A1CF /* NetworkService.swift */; };
+		E8EE46112A13650A0066A1CF /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E8EE46102A13650A0066A1CF /* Moya */; };
+		E8EE46132A13659F0066A1CF /* CategoriesAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE46122A13659F0066A1CF /* CategoriesAPIService.swift */; };
+		E8EE46152A1365A50066A1CF /* ShowEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE46142A1365A50066A1CF /* ShowEndpoints.swift */; };
+		E8EE46182A136ADF0066A1CF /* FlowStacks in Frameworks */ = {isa = PBXBuildFile; productRef = E8EE46172A136ADF0066A1CF /* FlowStacks */; };
+		E8EE461B2A136B460066A1CF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE461A2A136B460066A1CF /* AppCoordinator.swift */; };
+		E8EE461D2A136F520066A1CF /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE461C2A136F520066A1CF /* CategoriesModel.swift */; };
+		E8EE46202A1387E30066A1CF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE461F2A1387E30066A1CF /* ColorExtension.swift */; };
+		E8EE46222A1391660066A1CF /* ObjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE46212A1391660066A1CF /* ObjectsView.swift */; };
+		E8EE46242A1391760066A1CF /* ObjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE46232A1391760066A1CF /* ObjectsViewModel.swift */; };
+		E8EE46262A1391850066A1CF /* ObjectsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE46252A1391850066A1CF /* ObjectsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E8EE45ED2A1359950066A1CF /* 2GIS_TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2GIS_TEST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8EE45F02A1359950066A1CF /* _GIS_TESTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _GIS_TESTApp.swift; sourceTree = "<group>"; };
-		E8EE45F22A1359950066A1CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E8EE45F22A1359950066A1CF /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		E8EE45F42A1359970066A1CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8EE45F72A1359970066A1CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8EE45FF2A1360850066A1CF /* CategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryResponse.swift; sourceTree = "<group>"; };
+		E8EE46032A1361D60066A1CF /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		E8EE460A2A1364610066A1CF /* DecoderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoderService.swift; sourceTree = "<group>"; };
+		E8EE460B2A1364610066A1CF /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E8EE46122A13659F0066A1CF /* CategoriesAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesAPIService.swift; sourceTree = "<group>"; };
+		E8EE46142A1365A50066A1CF /* ShowEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEndpoints.swift; sourceTree = "<group>"; };
+		E8EE461A2A136B460066A1CF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E8EE461C2A136F520066A1CF /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
+		E8EE461F2A1387E30066A1CF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		E8EE46212A1391660066A1CF /* ObjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsView.swift; sourceTree = "<group>"; };
+		E8EE46232A1391760066A1CF /* ObjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsViewModel.swift; sourceTree = "<group>"; };
+		E8EE46252A1391850066A1CF /* ObjectsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8EE46112A13650A0066A1CF /* Moya in Frameworks */,
+				E8EE46182A136ADF0066A1CF /* FlowStacks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +79,12 @@
 		E8EE45EF2A1359950066A1CF /* 2GIS_TEST */ = {
 			isa = PBXGroup;
 			children = (
-				E8EE45F02A1359950066A1CF /* _GIS_TESTApp.swift */,
-				E8EE45F22A1359950066A1CF /* ContentView.swift */,
-				E8EE45F42A1359970066A1CF /* Assets.xcassets */,
+				E8EE461E2A1387CE0066A1CF /* Extensions */,
+				E8EE46082A1363E50066A1CF /* Entities */,
+				E8EE46052A1361E40066A1CF /* Application */,
+				E8EE46192A136B350066A1CF /* Coordinators */,
+				E8EE46022A1361B50066A1CF /* Flows */,
+				E8EE45FE2A1360590066A1CF /* Service */,
 				E8EE45F62A1359970066A1CF /* Preview Content */,
 			);
 			path = 2GIS_TEST;
@@ -65,6 +96,79 @@
 				E8EE45F72A1359970066A1CF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E8EE45FE2A1360590066A1CF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE46142A1365A50066A1CF /* ShowEndpoints.swift */,
+				E8EE46122A13659F0066A1CF /* CategoriesAPIService.swift */,
+				E8EE460A2A1364610066A1CF /* DecoderService.swift */,
+				E8EE460B2A1364610066A1CF /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E8EE46022A1361B50066A1CF /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE46072A13624B0066A1CF /* Objects */,
+				E8EE46062A1362000066A1CF /* Categories */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		E8EE46052A1361E40066A1CF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE45F02A1359950066A1CF /* _GIS_TESTApp.swift */,
+				E8EE45F42A1359970066A1CF /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E8EE46062A1362000066A1CF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE46032A1361D60066A1CF /* CategoriesViewModel.swift */,
+				E8EE45F22A1359950066A1CF /* CategoriesView.swift */,
+				E8EE461C2A136F520066A1CF /* CategoriesModel.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		E8EE46072A13624B0066A1CF /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE46212A1391660066A1CF /* ObjectsView.swift */,
+				E8EE46232A1391760066A1CF /* ObjectsViewModel.swift */,
+				E8EE46252A1391850066A1CF /* ObjectsModel.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		E8EE46082A1363E50066A1CF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE45FF2A1360850066A1CF /* CategoryResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E8EE46192A136B350066A1CF /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE461A2A136B460066A1CF /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E8EE461E2A1387CE0066A1CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE461F2A1387E30066A1CF /* ColorExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +187,10 @@
 			dependencies = (
 			);
 			name = 2GIS_TEST;
+			packageProductDependencies = (
+				E8EE46102A13650A0066A1CF /* Moya */,
+				E8EE46172A136ADF0066A1CF /* FlowStacks */,
+			);
 			productName = 2GIS_TEST;
 			productReference = E8EE45ED2A1359950066A1CF /* 2GIS_TEST.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +219,10 @@
 				Base,
 			);
 			mainGroup = E8EE45E42A1359950066A1CF;
+			packageReferences = (
+				E8EE460F2A13650A0066A1CF /* XCRemoteSwiftPackageReference "Moya" */,
+				E8EE46162A136ADF0066A1CF /* XCRemoteSwiftPackageReference "FlowStacks" */,
+			);
 			productRefGroup = E8EE45EE2A1359950066A1CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +249,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8EE45F32A1359950066A1CF /* ContentView.swift in Sources */,
+				E8EE46042A1361D60066A1CF /* CategoriesViewModel.swift in Sources */,
+				E8EE45F32A1359950066A1CF /* CategoriesView.swift in Sources */,
 				E8EE45F12A1359950066A1CF /* _GIS_TESTApp.swift in Sources */,
+				E8EE46152A1365A50066A1CF /* ShowEndpoints.swift in Sources */,
+				E8EE460D2A1364610066A1CF /* DecoderService.swift in Sources */,
+				E8EE46222A1391660066A1CF /* ObjectsView.swift in Sources */,
+				E8EE461D2A136F520066A1CF /* CategoriesModel.swift in Sources */,
+				E8EE46132A13659F0066A1CF /* CategoriesAPIService.swift in Sources */,
+				E8EE461B2A136B460066A1CF /* AppCoordinator.swift in Sources */,
+				E8EE46002A1360850066A1CF /* CategoryResponse.swift in Sources */,
+				E8EE46262A1391850066A1CF /* ObjectsModel.swift in Sources */,
+				E8EE46242A1391760066A1CF /* ObjectsViewModel.swift in Sources */,
+				E8EE46202A1387E30066A1CF /* ColorExtension.swift in Sources */,
+				E8EE460E2A1364610066A1CF /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +461,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E8EE460F2A13650A0066A1CF /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		E8EE46162A136ADF0066A1CF /* XCRemoteSwiftPackageReference "FlowStacks" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnpatrickmorgan/FlowStacks";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E8EE46102A13650A0066A1CF /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8EE460F2A13650A0066A1CF /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		E8EE46172A136ADF0066A1CF /* FlowStacks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8EE46162A136ADF0066A1CF /* XCRemoteSwiftPackageReference "FlowStacks" */;
+			productName = FlowStacks;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E8EE45E52A1359950066A1CF /* Project object */;
 }
