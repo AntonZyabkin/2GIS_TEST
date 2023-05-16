@@ -12,6 +12,10 @@ final class ObjectViewModel: ObservableObject {
         self.categoryName = categoryName
     }
     
+    convenience init() {
+        self.init(categoryType: "", categoryName: "", objectsItems: [])
+        objectModel = ObjectsModel.skelet
+    }
     
     func open2GIS(_ item: Object) {
         let lond = Float(item.lon)
@@ -32,3 +36,5 @@ final class ObjectViewModel: ObservableObject {
         }
     }
 }
+
+

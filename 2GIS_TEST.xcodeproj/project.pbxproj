@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E80D6B432A13AB0E003B5422 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E80D6B422A13AB0E003B5422 /* Kingfisher */; };
+		E89926B52A13CDF700876248 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89926B42A13CDF700876248 /* URLImageView.swift */; };
+		E89926B82A13E56900876248 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89926B72A13E56900876248 /* ImageLoader.swift */; };
 		E8EE45F12A1359950066A1CF /* _GIS_TESTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE45F02A1359950066A1CF /* _GIS_TESTApp.swift */; };
 		E8EE45F32A1359950066A1CF /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE45F22A1359950066A1CF /* CategoriesView.swift */; };
 		E8EE45F52A1359970066A1CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8EE45F42A1359970066A1CF /* Assets.xcassets */; };
@@ -30,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		E89926B02A13B7CA00876248 /* -GIS-TEST-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-GIS-TEST-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E89926B42A13CDF700876248 /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
+		E89926B72A13E56900876248 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		E8EE45ED2A1359950066A1CF /* 2GIS_TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2GIS_TEST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8EE45F02A1359950066A1CF /* _GIS_TESTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _GIS_TESTApp.swift; sourceTree = "<group>"; };
 		E8EE45F22A1359950066A1CF /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
@@ -54,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E80D6B432A13AB0E003B5422 /* Kingfisher in Frameworks */,
 				E8EE46112A13650A0066A1CF /* Moya in Frameworks */,
 				E8EE46182A136ADF0066A1CF /* FlowStacks in Frameworks */,
 			);
@@ -63,6 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E89926B32A13CDED00876248 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E89926B42A13CDF700876248 /* URLImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E89926B62A13E55800876248 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E89926B72A13E56900876248 /* ImageLoader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E8EE45E42A1359950066A1CF = {
 			isa = PBXGroup;
 			children = (
@@ -83,10 +101,12 @@
 			isa = PBXGroup;
 			children = (
 				E89926B02A13B7CA00876248 /* -GIS-TEST-Info.plist */,
+				E89926B62A13E55800876248 /* Helpers */,
 				E8EE461E2A1387CE0066A1CF /* Extensions */,
 				E8EE46082A1363E50066A1CF /* Entities */,
 				E8EE46052A1361E40066A1CF /* Application */,
 				E8EE46192A136B350066A1CF /* Coordinators */,
+				E89926B32A13CDED00876248 /* Views */,
 				E8EE46022A1361B50066A1CF /* Flows */,
 				E8EE45FE2A1360590066A1CF /* Service */,
 				E8EE45F62A1359970066A1CF /* Preview Content */,
@@ -194,7 +214,6 @@
 			packageProductDependencies = (
 				E8EE46102A13650A0066A1CF /* Moya */,
 				E8EE46172A136ADF0066A1CF /* FlowStacks */,
-				E80D6B422A13AB0E003B5422 /* Kingfisher */,
 			);
 			productName = 2GIS_TEST;
 			productReference = E8EE45ED2A1359950066A1CF /* 2GIS_TEST.app */;
@@ -227,7 +246,6 @@
 			packageReferences = (
 				E8EE460F2A13650A0066A1CF /* XCRemoteSwiftPackageReference "Moya" */,
 				E8EE46162A136ADF0066A1CF /* XCRemoteSwiftPackageReference "FlowStacks" */,
-				E80D6B412A13AB0E003B5422 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = E8EE45EE2A1359950066A1CF /* Products */;
 			projectDirPath = "";
@@ -261,6 +279,7 @@
 				E8EE46152A1365A50066A1CF /* ShowEndpoints.swift in Sources */,
 				E8EE460D2A1364610066A1CF /* DecoderService.swift in Sources */,
 				E8EE46222A1391660066A1CF /* ObjectsView.swift in Sources */,
+				E89926B82A13E56900876248 /* ImageLoader.swift in Sources */,
 				E8EE461D2A136F520066A1CF /* CategoriesModel.swift in Sources */,
 				E8EE46132A13659F0066A1CF /* CategoriesAPIService.swift in Sources */,
 				E8EE461B2A136B460066A1CF /* AppCoordinator.swift in Sources */,
@@ -269,6 +288,7 @@
 				E8EE46242A1391760066A1CF /* ObjectsViewModel.swift in Sources */,
 				E8EE46202A1387E30066A1CF /* ColorExtension.swift in Sources */,
 				E8EE460E2A1364610066A1CF /* NetworkService.swift in Sources */,
+				E89926B52A13CDF700876248 /* URLImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,14 +493,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E80D6B412A13AB0E003B5422 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
-			};
-		};
 		E8EE460F2A13650A0066A1CF /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -500,11 +512,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E80D6B422A13AB0E003B5422 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E80D6B412A13AB0E003B5422 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
 		E8EE46102A13650A0066A1CF /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E8EE460F2A13650A0066A1CF /* XCRemoteSwiftPackageReference "Moya" */;
