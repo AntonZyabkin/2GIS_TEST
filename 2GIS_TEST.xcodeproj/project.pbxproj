@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E80D6B432A13AB0E003B5422 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E80D6B422A13AB0E003B5422 /* Kingfisher */; };
 		E8EE45F12A1359950066A1CF /* _GIS_TESTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE45F02A1359950066A1CF /* _GIS_TESTApp.swift */; };
 		E8EE45F32A1359950066A1CF /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE45F22A1359950066A1CF /* CategoriesView.swift */; };
 		E8EE45F52A1359970066A1CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8EE45F42A1359970066A1CF /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E89926B02A13B7CA00876248 /* -GIS-TEST-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-GIS-TEST-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E8EE45ED2A1359950066A1CF /* 2GIS_TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2GIS_TEST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8EE45F02A1359950066A1CF /* _GIS_TESTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _GIS_TESTApp.swift; sourceTree = "<group>"; };
 		E8EE45F22A1359950066A1CF /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E80D6B432A13AB0E003B5422 /* Kingfisher in Frameworks */,
 				E8EE46112A13650A0066A1CF /* Moya in Frameworks */,
 				E8EE46182A136ADF0066A1CF /* FlowStacks in Frameworks */,
 			);
@@ -79,6 +82,7 @@
 		E8EE45EF2A1359950066A1CF /* 2GIS_TEST */ = {
 			isa = PBXGroup;
 			children = (
+				E89926B02A13B7CA00876248 /* -GIS-TEST-Info.plist */,
 				E8EE461E2A1387CE0066A1CF /* Extensions */,
 				E8EE46082A1363E50066A1CF /* Entities */,
 				E8EE46052A1361E40066A1CF /* Application */,
@@ -190,6 +194,7 @@
 			packageProductDependencies = (
 				E8EE46102A13650A0066A1CF /* Moya */,
 				E8EE46172A136ADF0066A1CF /* FlowStacks */,
+				E80D6B422A13AB0E003B5422 /* Kingfisher */,
 			);
 			productName = 2GIS_TEST;
 			productReference = E8EE45ED2A1359950066A1CF /* 2GIS_TEST.app */;
@@ -222,6 +227,7 @@
 			packageReferences = (
 				E8EE460F2A13650A0066A1CF /* XCRemoteSwiftPackageReference "Moya" */,
 				E8EE46162A136ADF0066A1CF /* XCRemoteSwiftPackageReference "FlowStacks" */,
+				E80D6B412A13AB0E003B5422 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = E8EE45EE2A1359950066A1CF /* Products */;
 			projectDirPath = "";
@@ -391,8 +397,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"2GIS_TEST/Preview Content\"";
+				DEVELOPMENT_TEAM = 3T8QTL98W8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-GIS-TEST-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -419,8 +427,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"2GIS_TEST/Preview Content\"";
+				DEVELOPMENT_TEAM = 3T8QTL98W8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-GIS-TEST-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -463,6 +473,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E80D6B412A13AB0E003B5422 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		E8EE460F2A13650A0066A1CF /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -482,6 +500,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E80D6B422A13AB0E003B5422 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E80D6B412A13AB0E003B5422 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		E8EE46102A13650A0066A1CF /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E8EE460F2A13650A0066A1CF /* XCRemoteSwiftPackageReference "Moya" */;

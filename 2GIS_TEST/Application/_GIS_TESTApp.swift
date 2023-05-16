@@ -12,6 +12,9 @@ struct _GIS_TESTApp: App {
     var body: some Scene {
         WindowGroup {
             AppCoordinator()
+                .onOpenURL { url in
+                    print(url.absoluteString)
+                }
         }
     }
 }

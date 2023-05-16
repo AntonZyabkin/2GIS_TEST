@@ -18,7 +18,7 @@ struct CategoriesView: View {
             List {
                 ForEach(viewModel.categoriesModel.categoryItems) { item in
                     NavigationLink {
-                        ObjectsView(viewModel: ObjectViewModel(objects: viewModel.getObjects(type: item.data.type), categotyType: item.data.type))
+                        ObjectsView(viewModel: ObjectViewModel(categoryType: item.data.type, categoryName: item.data.name, objectsItems: viewModel.getObjects(type: item.data.type)))
                     } label: {
                         CategoryItemView(name: item.data.name, count: item.data.count, color: Color(item.data.color))
                     }
