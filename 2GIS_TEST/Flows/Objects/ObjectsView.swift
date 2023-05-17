@@ -51,6 +51,6 @@ struct ObjectsItemView: View {
 
 struct ObjectsView_Previews: PreviewProvider {
     static var previews: some View {
-        ObjectsView(viewModel: ObjectViewModel())
+        ObjectsView(viewModel: ObjectViewModel(objectsModel: ObjectsModel(category: "", objectsItems: [])))
     }
 }

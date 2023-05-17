@@ -3,7 +3,7 @@ import SwiftUI
 
 final class CategoriesViewModel: ObservableObject {
     
-    @Published var categoriesModel = CategoriesModel.skelet
+    @Published var categoriesModel = CategoriesModel(categoryItems: [])
     @Published var showingAlert = false
     
     private var objects: [Object] = []
@@ -40,9 +40,5 @@ final class CategoriesViewModel: ObservableObject {
             print(error)
             showingAlert.toggle()
         }
-    }
-    
-    deinit {
-        print("CategoriesViewModel deinited")
     }
 }

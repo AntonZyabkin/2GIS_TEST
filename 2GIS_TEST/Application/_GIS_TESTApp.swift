@@ -17,18 +17,3 @@ struct _GIS_TESTApp: App {
         }
     }
 }
-
-struct TEST_VIEW: View {
-    var body: some View {
-        Text("TEST_VIEW")
-    }
-    let dea = DeallocPrinter()
-}
-class DeallocPrinter {
-    init() {
-        print("DeallocPrinter inited")
-    }
-    deinit {
-        print("DeallocPrinter deallocated")
-    }
-}
