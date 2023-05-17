@@ -9,12 +9,26 @@ import SwiftUI
 
 @main
 struct _GIS_TESTApp: App {
+    let networcService = NetworkService(decoderService: DecoderService())
+    
     var body: some Scene {
         WindowGroup {
-            AppCoordinator()
-                .onOpenURL { url in
-                    print(url.absoluteString)
-                }
+            CategoriesView(viewModel: CategoriesViewModel(apiService: CategoriesAPIService(networkService: networcService)))
         }
+    }
+}
+
+struct TEST_VIEW: View {
+    var body: some View {
+        Text("TEST_VIEW")
+    }
+    let dea = DeallocPrinter()
+}
+class DeallocPrinter {
+    init() {
+        print("DeallocPrinter inited")
+    }
+    deinit {
+        print("DeallocPrinter deallocated")
     }
 }

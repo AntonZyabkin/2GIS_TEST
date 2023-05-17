@@ -4,16 +4,17 @@ import SwiftUI
 final class ObjectViewModel: ObservableObject {
     
     @Published var objectModel = ObjectsModel.skelet
-    let categoryName: String
     private var disposeBag = Set<AnyCancellable>()
     
-    init(categoryType: String, categoryName: String, objectsItems: [Object]) {
-        self.objectModel = ObjectsModel(category: categoryType, objectsItems: objectsItems)
-        self.categoryName = categoryName
+    
+    
+    init(objectsModel: ObjectsModel) {
+        self.objectModel = objectsModel
+        print("init(objectsModel")
     }
     
     convenience init() {
-        self.init(categoryType: "", categoryName: "", objectsItems: [])
+        self.init()
         objectModel = ObjectsModel.skelet
     }
     
@@ -34,6 +35,11 @@ final class ObjectViewModel: ObservableObject {
                 .shared
                 .open(URL(string: "https://apps.apple.com/ru/app/2%D0%B3%D0%B8%D1%81-%D0%BA%D0%B0%D1%80%D1%82%D1%8B-%D0%B8-%D0%BD%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%BE%D1%80/id481627348")!)
         }
+    }
+    
+    
+    deinit {
+        print("ObjectViewModel deinited")
     }
 }
 

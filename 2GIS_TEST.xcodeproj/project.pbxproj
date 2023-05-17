@@ -20,8 +20,6 @@
 		E8EE46112A13650A0066A1CF /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E8EE46102A13650A0066A1CF /* Moya */; };
 		E8EE46132A13659F0066A1CF /* CategoriesAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE46122A13659F0066A1CF /* CategoriesAPIService.swift */; };
 		E8EE46152A1365A50066A1CF /* ShowEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE46142A1365A50066A1CF /* ShowEndpoints.swift */; };
-		E8EE46182A136ADF0066A1CF /* FlowStacks in Frameworks */ = {isa = PBXBuildFile; productRef = E8EE46172A136ADF0066A1CF /* FlowStacks */; };
-		E8EE461B2A136B460066A1CF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE461A2A136B460066A1CF /* AppCoordinator.swift */; };
 		E8EE461D2A136F520066A1CF /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE461C2A136F520066A1CF /* CategoriesModel.swift */; };
 		E8EE46202A1387E30066A1CF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE461F2A1387E30066A1CF /* ColorExtension.swift */; };
 		E8EE46222A1391660066A1CF /* ObjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EE46212A1391660066A1CF /* ObjectsView.swift */; };
@@ -44,7 +42,6 @@
 		E8EE460B2A1364610066A1CF /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E8EE46122A13659F0066A1CF /* CategoriesAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesAPIService.swift; sourceTree = "<group>"; };
 		E8EE46142A1365A50066A1CF /* ShowEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEndpoints.swift; sourceTree = "<group>"; };
-		E8EE461A2A136B460066A1CF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E8EE461C2A136F520066A1CF /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
 		E8EE461F2A1387E30066A1CF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		E8EE46212A1391660066A1CF /* ObjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsView.swift; sourceTree = "<group>"; };
@@ -58,7 +55,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8EE46112A13650A0066A1CF /* Moya in Frameworks */,
-				E8EE46182A136ADF0066A1CF /* FlowStacks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +101,6 @@
 				E8EE461E2A1387CE0066A1CF /* Extensions */,
 				E8EE46082A1363E50066A1CF /* Entities */,
 				E8EE46052A1361E40066A1CF /* Application */,
-				E8EE46192A136B350066A1CF /* Coordinators */,
 				E89926B32A13CDED00876248 /* Views */,
 				E8EE46022A1361B50066A1CF /* Flows */,
 				E8EE45FE2A1360590066A1CF /* Service */,
@@ -179,14 +174,6 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		E8EE46192A136B350066A1CF /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				E8EE461A2A136B460066A1CF /* AppCoordinator.swift */,
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
 		E8EE461E2A1387CE0066A1CF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +200,6 @@
 			name = 2GIS_TEST;
 			packageProductDependencies = (
 				E8EE46102A13650A0066A1CF /* Moya */,
-				E8EE46172A136ADF0066A1CF /* FlowStacks */,
 			);
 			productName = 2GIS_TEST;
 			productReference = E8EE45ED2A1359950066A1CF /* 2GIS_TEST.app */;
@@ -245,7 +231,6 @@
 			mainGroup = E8EE45E42A1359950066A1CF;
 			packageReferences = (
 				E8EE460F2A13650A0066A1CF /* XCRemoteSwiftPackageReference "Moya" */,
-				E8EE46162A136ADF0066A1CF /* XCRemoteSwiftPackageReference "FlowStacks" */,
 			);
 			productRefGroup = E8EE45EE2A1359950066A1CF /* Products */;
 			projectDirPath = "";
@@ -282,7 +267,6 @@
 				E89926B82A13E56900876248 /* ImageLoader.swift in Sources */,
 				E8EE461D2A136F520066A1CF /* CategoriesModel.swift in Sources */,
 				E8EE46132A13659F0066A1CF /* CategoriesAPIService.swift in Sources */,
-				E8EE461B2A136B460066A1CF /* AppCoordinator.swift in Sources */,
 				E8EE46002A1360850066A1CF /* CategoryResponse.swift in Sources */,
 				E8EE46262A1391850066A1CF /* ObjectsModel.swift in Sources */,
 				E8EE46242A1391760066A1CF /* ObjectsViewModel.swift in Sources */,
@@ -501,14 +485,6 @@
 				minimumVersion = 15.0.0;
 			};
 		};
-		E8EE46162A136ADF0066A1CF /* XCRemoteSwiftPackageReference "FlowStacks" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/johnpatrickmorgan/FlowStacks";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -516,11 +492,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E8EE460F2A13650A0066A1CF /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
-		};
-		E8EE46172A136ADF0066A1CF /* FlowStacks */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E8EE46162A136ADF0066A1CF /* XCRemoteSwiftPackageReference "FlowStacks" */;
-			productName = FlowStacks;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

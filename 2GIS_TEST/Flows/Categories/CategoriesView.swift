@@ -18,7 +18,7 @@ struct CategoriesView: View {
             List {
                 ForEach(viewModel.categoriesModel.categoryItems) { item in
                     NavigationLink {
-                        ObjectsView(viewModel: ObjectViewModel(categoryType: item.data.type, categoryName: item.data.name, objectsItems: viewModel.getObjects(type: item.data.type)))
+                        ObjectsView(viewModel: ObjectViewModel(objectsModel: ObjectsModel(category: item.data.name, objectsItems: viewModel.getObjects(type: item.data.type))))
                     } label: {
                         CategoryItemView(name: item.data.name, count: item.data.count, color: Color(item.data.color))
                     }
@@ -28,7 +28,7 @@ struct CategoriesView: View {
             .navigationTitle("Категории")
         }
         .alert(isPresented: $viewModel.showingAlert) {
-            Alert(title: Text("Load data error"), message: nil, dismissButton: .default(Text("Ok")) {
+            Alert(title: Text("Ошибка загрузки данных"), message: nil, dismissButton: .default(Text("Ok")) {
                 viewModel.showingAlert.toggle()
             })
         }

@@ -13,15 +13,12 @@ struct ObjectsView: View {
                     ObjectsItemView(url: item.image, name: item.name, description: item.description)
                     
                 }
+                .padding(.vertical, 10)
                 .buttonStyle(.plain)
             }
         }
         .listStyle(.plain)
-        .navigationTitle(viewModel.categoryName)
-//        .onAppear {
-//            URLCache.shared.memoryCapacity = 1024 * 1024 * 10
-//            print(URLCache.shared.memoryCapacity)
-//        }
+        .navigationTitle(viewModel.objectModel.category)
     }
 }
 
@@ -33,13 +30,11 @@ struct ObjectsItemView: View {
     var body: some View {
         
         HStack {
-            
             URLImageView(urlString: url)
                 .frame(width: 115, height: 80)
                 .clipped()
                 .cornerRadius(10)
-            
-            
+                .padding(.trailing, 10)
             
             VStack(alignment: .leading) {
                 Text(name)

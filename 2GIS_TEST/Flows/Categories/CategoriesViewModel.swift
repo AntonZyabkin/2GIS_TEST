@@ -7,9 +7,9 @@ final class CategoriesViewModel: ObservableObject {
     @Published var showingAlert = false
     
     private var objects: [Object] = []
-    
     private let apiService: CategoriesAPIServicable
     private var disposeBag = Set<AnyCancellable>()
+    
     
     init(apiService: CategoriesAPIServicable) {
         self.apiService = apiService
@@ -23,7 +23,7 @@ final class CategoriesViewModel: ObservableObject {
                 let categoriesItems = categories.data.categories.map { CategoryItem(data: $0)}
                 objects = categories.data.objects
                 await MainActor.run {
-                    categoriesModel.categoryItems = categoriesItems
+                    categoriesModel = CategoriesModel(categoryItems: categoriesItems)
                 }
             } catch let error as NetworkError {
                 await showError(error)
@@ -40,5 +40,9 @@ final class CategoriesViewModel: ObservableObject {
             print(error)
             showingAlert.toggle()
         }
+    }
+    
+    deinit {
+        print("CategoriesViewModel deinited")
     }
 }
